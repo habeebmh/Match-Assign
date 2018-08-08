@@ -1,0 +1,29 @@
+.login-wrapper {
+    color: azure;
+    width: 500px;
+    max-width: 90%;
+    padding: 20px;
+    margin: 10% auto auto auto;
+    background: #1E88E5;
+    border-radius: 50px;
+}
+
+.login-wrapper input {
+    margin: 10px auto 10px auto;
+    max-width: 80%;
+}
+
+.login-wrapper input[type=text], input[type=password] {
+    width: 450px;
+}
+
+.login-wrapper input[type=button], input[type=submit] {
+    margin-top: 15px;
+    width: 200px;
+}
+
+.login-wrapper h1 {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}

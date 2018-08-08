@@ -1,2 +1,31 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+
+<div>
+	<h1>Welcome to Match Assign</h1>
+
+	<div class=“toolbar”>
+			<div class=“toolbar-button”>My Profile</div>
+	</div>
+	
+	<div class=“game-list”>
+		{{#each gameObjectArray}}
+			<div class=“game”>
+				<p>Home: {{this.homeTeamString}}</p>
+				<p>Away: {{this.awayTeamString}}</p>
+				<p>Time: {{this.timeString}}</p>
+				<p><a href=“/game-details/{{this.gameIdString}}”>Game Details</a></p>
+			</div>
+		{{/each}}
+	</div>	
+
+	<div class=“announcement-list”>
+		{{#each announcementObjectArray}}
+			<div class=“announcement”>
+				<h3>{{this.announcementTitleString}}</h3>
+				<h4>{{this.announcementAuthor}}</h4>
+				<p>{{this.announcementTextString}}</p>
+				<p>{{this.annoucementDateString}}</p>
+			<div>
+		{{/each}}
+	</div>
+</div>
+
